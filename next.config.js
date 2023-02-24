@@ -1,6 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
+const basePath = "";
 
-module.exports = nextConfig
+module.exports = {
+  reactStrictMode: true,
+  env: {
+    basePath: basePath,
+    img: `${basePath}/img`,
+    title: "Galeria Acessível",
+  },
+};
